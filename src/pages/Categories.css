@@ -1,0 +1,136 @@
+.categories-page {
+  padding: 0;
+}
+
+.add-category-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: white;
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.add-category-form input {
+  padding: 10px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  outline: none;
+}
+
+.add-category-form input:focus {
+  border-color: var(--primary);
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.cat-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border-top: 4px solid;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.cat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.cat-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat-icon {
+  font-size: 28px;
+}
+
+.cat-delete {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: var(--text-light);
+  padding: 2px 6px;
+  border-radius: 4px;
+  line-height: 1;
+  opacity: 0;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.cat-card:hover .cat-delete {
+  opacity: 1;
+}
+
+.cat-delete:hover {
+  color: var(--danger);
+  background: #ffebee;
+}
+
+.cat-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.cat-desc {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.cat-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.cat-stat {
+  text-align: center;
+}
+
+.cat-stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: block;
+}
+
+.cat-stat-label {
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+.cat-alert {
+  margin-top: 12px;
+  padding: 8px 12px;
+  background: #fff8e1;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  color: #e65100;
+  font-weight: 600;
+}

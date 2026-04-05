@@ -1,0 +1,152 @@
+.orders-page {
+  padding: 0;
+}
+
+.order-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-count {
+  background: rgba(0,0,0,0.08);
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-size: 11px;
+  margin-left: 4px;
+}
+
+.filter-chip.active .filter-count {
+  background: rgba(255,255,255,0.25);
+}
+
+.orders-table-wrapper {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th {
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-light);
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.orders-table td {
+  padding: 14px 16px;
+  font-size: 13px;
+  border-bottom: 1px solid #f5f5f5;
+  color: var(--text-secondary);
+}
+
+.order-row {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.order-row:hover {
+  background: #fafafa;
+}
+
+.order-id {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.order-phone {
+  color: var(--text-light);
+  font-size: 12px;
+}
+
+.order-total {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.order-status {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.status-select {
+  padding: 6px 10px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.status-select:focus {
+  border-color: var(--primary);
+}
+
+.order-details-row td {
+  padding: 0 !important;
+}
+
+.order-details {
+  background: #f8fdf8;
+  padding: 16px 24px;
+  border-left: 3px solid var(--primary);
+}
+
+.order-details h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.detail-items {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.detail-name {
+  flex: 1;
+}
+
+.detail-qty {
+  color: var(--text-light);
+  min-width: 50px;
+}
+
+.detail-price {
+  font-weight: 600;
+  min-width: 90px;
+  text-align: right;
+}
+
+.detail-total {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  text-align: right;
+  font-size: 15px;
+}
