@@ -14,7 +14,7 @@
 ## Step 1: Open the Project Folder
 
 ```bash
-cd C:\Users\PL722TU\feed-shop-stock-management
+cd C:\Users\ADMIN\OneDrive\Desktop\CC mini project\Shop-project
 ```
 
 ---
@@ -60,7 +60,7 @@ Database seeded successfully!
 Open a **new terminal** and run:
 
 ```bash
-cd C:\Users\PL722TU\feed-shop-stock-management
+cd C:\Users\ADMIN\OneDrive\Desktop\CC mini project\Shop-project
 npm run dev
 ```
 
@@ -92,5 +92,5 @@ http://localhost:3000
 
 > **Always start the backend first, then the frontend.**
 
-Username: Short_Parushi
+Username: Shreeram_Traders
 Password: Teju@123
